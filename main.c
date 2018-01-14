@@ -202,6 +202,12 @@ void setSampleTimeADC1(void){
 }
 
 void setChannelsADC1(void){
+	RCC->AHBENR |= RCC_AHBENR_GPIOCEN;
+	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;
+
+	GPIOA->MODER |= GPIO_MODER_MODER2 | GPIO_MODER_MODER3; // Select analog mode for PA2, PA3
+	GPIOC->MODER |= GPIO_MODER_MODER3 | GPIO_MODER_MODER4; //Select analog mode for PC3, PC4
+
 	ADC1->CHSELR = ADC_CHSELR_CHSEL3 | ADC_CHSELR_CHSEL13
 	    	| ADC_CHSELR_CHSEL2 | ADC_CHSELR_CHSEL14;
 }
@@ -364,6 +370,15 @@ void sendResults(void) {
 	USART1_send(buf);
 }
 
+void configureLED(void) {
+	RCC->AHBENR |= RCC_AHBENR_GPIOCEN; // GPIOC enable
+	GPIOC->MODER |= GPIO_MODER_MODER8_0;
+}
+
+void toggleLED(void) {
+	GPIOC->ODR ^= 1<<8;
+}
+
 int main(void)
 {
 	SystemInit();
@@ -383,13 +398,17 @@ int main(void)
 
 	initDHT11();
 
+	configureLED();
+
 	DBGMCU->CR |= DBGMCU_CR_DBG_STANDBY | DBGMCU_CR_DBG_STOP; // debug in sleep mode
 
     while(1)
     {
+    	toggleLED();
     	updateAnalogSensorsValues();
     	updateHumidityTemperature();
     	sendResults();
+    	toggleLED();
     	PWR_EnterSleepMode(PWR_SLEEPEntry_WFI);
     }
 }
