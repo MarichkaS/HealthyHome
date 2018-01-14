@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F072R8 -I..\..\..\workspace\HealthyHome\cmsis_boot -I..\..\..\workspace\HealthyHome -I..\..\..\workspace\HealthyHome\cmsis_lib\include -I..\..\..\workspace -I..\..\..\workspace\HealthyHome\cmsis_core -I..\..\..\workspace\HealthyHome\cmsis_lib -I..\..\..\workspace\HealthyHome\m">
+      <target file="syscalls.o" lastModified="160f52ebd9e">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="160f4896e6f"/>
+      </target>
+      <target file="stm32f0xx_syscfg.o" lastModified="160f52ec82d">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_syscfg.c" lastModified="160e11c065a"/>
+      </target>
+      <target file="stm32f0xx_gpio.o" lastModified="160f52eb835">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_gpio.c" lastModified="160e11c061c"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="160f52eb12a">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_rcc.c" lastModified="160e11c0646"/>
+      </target>
+      <target file="stm32f0xx_misc.o" lastModified="160f52ecd99">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_misc.c" lastModified="160e11c0633"/>
+      </target>
+      <target file="stm32f0xx_pwr.o" lastModified="160f52ecb09">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_pwr.c" lastModified="160f4899b4f"/>
+      </target>
+      <target file="main.o" lastModified="160f54a924e">
+         <source file="..\..\..\main.c" lastModified="160f54a875c"/>
+      </target>
+      <target file="stm32f0xx_tim.o" lastModified="160f52ec08a">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_tim.c" lastModified="160e11c066f"/>
+      </target>
+      <target file="system_stm32f0xx.o" lastModified="160f52ec317">
+         <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="160f488c9fc"/>
+      </target>
+      <target file="stm32f0xx_exti.o" lastModified="160f52ec59e">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_exti.c" lastModified="160e11c0609"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="160f52eb588">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="160f488c9ec"/>
+      </target>
+      <target file="stm32f0xx_rtc.o" lastModified="160f52ebb10">
+         <source file="..\..\..\cmsis_lib\source\stm32f0xx_rtc.c" lastModified="160f4898631"/>
+      </target>
+   </processor>
+</history>

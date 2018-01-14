@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=HealthyHome.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\HealthyHome -TC:\CooCox\CoIDE\configuration\ProgramData\HealthyHome/arm-gcc-link.ld -g -L..\..\.. -lm">
+      <target file="HealthyHome.elf" lastModified="160f54a94d6">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="160f52eb12a"/>
+         <source file="..\obj\main.o" lastModified="160f54a924e"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="160f52eb588"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="160f52eb835"/>
+         <source file="..\obj\stm32f0xx_rtc.o" lastModified="160f52ebb10"/>
+         <source file="..\obj\syscalls.o" lastModified="160f52ebd9e"/>
+         <source file="..\obj\stm32f0xx_tim.o" lastModified="160f52ec08a"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="160f52ec317"/>
+         <source file="..\obj\stm32f0xx_exti.o" lastModified="160f52ec59e"/>
+         <source file="..\obj\stm32f0xx_syscfg.o" lastModified="160f52ec82d"/>
+         <source file="..\obj\stm32f0xx_pwr.o" lastModified="160f52ecb09"/>
+         <source file="..\obj\stm32f0xx_misc.o" lastModified="160f52ecd99"/>
+      </target>
+   </processor>
+</history>
