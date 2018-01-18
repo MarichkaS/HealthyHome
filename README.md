@@ -1,6 +1,6 @@
 # HealthyHome
 STM32F072B-DISCO project. 
 
-[Paper](https://drive.google.com/file/d/1sVW1lAXHlnrspgLaTmAa2bM-VvRjLJ2S/view?usp=sharing)
+[Paper in Ukrainian](https://drive.google.com/file/d/1sVW1lAXHlnrspgLaTmAa2bM-VvRjLJ2S/view?usp=sharing) 
 
-<img src="healthyhome.jpg" width="800px" height="600px"/>
+<img src="healthyhome.jpg" width="400px" height="250px"/>
